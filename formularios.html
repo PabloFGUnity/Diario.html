@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Formulario</title>
+
+    </head>
+
+    <body>
+
+        <h1>Formularios en HTML</h1>
+
+        <!-- action es para mandar los datos a una url
+            get es para recibir datos
+            post para mandar datos a una base de datos 
+            submit es para enviar con un boton  -->
+        <form action="#" method="get">
+
+            Nombre:
+            <input type="text" name="Nombre" placeholder="Pon tu nombre"/>
+            <br/>
+            Apellido:
+            <input type="text" name="Apellido" placeholder="Pon tus apellidos"/>
+            <br/>
+            Correo Electronico
+            <input type="email" name="Correo" placeholder="Pon tu correo electronico"/>
+            <br/>
+            Contraseña:
+            <input type="password" name="Contraseña" placeholder="Pon tu contraseña"/>
+            <br/>
+            Telefono:
+            <input type="number" name="Telefono" placeholder="Pon tu Telefono" />
+            <br/>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" valur="Resetear"/>
+
+        </form>
+
+        <br/><hr/>
+
+        <form>
+            <!-- Tipo radio para seleccionar una cosa-->
+            Elige tu genero: 
+            <br/>
+            <input type="radio" name="Genero" id="Femenino" checked/>Femenino <br/>
+            <input type="radio" name="Genero" id="Masculino"/>Masculino <br/>
+            <input type="radio" name="Genero" id="Otro"/>Otro <br/>
+            <br/><br/>
+
+            <!-- Tipo checkbox para seleccionar varias cosas-->
+            Elige tu vehiculo:
+            <br>
+            <input type="checkbox" name="vehiculo1" value="Coche"/>Coche <br/>
+            <input type="checkbox" name="vehiculo2" value="Moto"/>Moto <br/>
+            <input type="checkbox" name="vehiculo3" value="Bici"/>Bici <br/>
+
+            <br/><br/>
+
+            <!--    tipo select es para crear una lista de varias opciones-->
+            <select name="Pais">
+
+                <option value=" ">Elige</option>
+                   <!-- selected es para marcar de antemano una opcion-->
+                <optgroup label="Europa">  
+                    <option value="ES" selected>España</option>
+                    <option value="IT">Italia</option>
+                    <option value="FR">Francia</option>
+                    <option value="AL">Alemania</option>
+                </optgroup>
+                <br/><br/>
+
+                <optgroup label="America">  
+                    <option value="EEUU">Estados Unidos</option>
+                    <option value="CH">Chile</option>
+                    <option value="AR">Argentina</option>
+                    <option value="VE">Venezuela</option>
+                </optgroup>
+
+
+
+            </select>
+
+            <br/><br/>
+
+            <select>
+
+                <option value=" ">Elige</option>
+                <optgroup label="Europa">  
+                    <option value="ES" >España</option>
+                    <option value="IT">Italia</option>
+                    <option value="FR">Francia</option>
+                    <option value="AL">Alemania</option>
+                </optgroup>
+                <br/><br/>
+
+                <optgroup label="America">  
+                    <option value="EEUU">Estados Unidos</option>
+                    <option value="CH">Chile</option>
+                    <option value="AR">Argentina</option>
+                    <option value="VE">Venezuela</option>
+                </optgroup>
+
+            </select>
+
+            <hr/><br/>
+
+            <fieldset>
+
+                <legend>Datos personales</legend>
+                <input type="text" name="Nombre" placeholder="Nombre"/><br/>
+                <input type="text" name="Apellidos" placeholder="Apellidos"/><br/>
+
+            </fieldset>
+            <br/>
+
+            <textarea name="mensaje" placeholder="Escribe en el texto" rows="10" cols="150" ></textarea>
+
+            <br/><br/>
+
+            Tu cumpleaños:
+            <input type="date" name="cumpleaños"/>
+
+            <br/><br/>
+
+            <input type="file" name="archivo"/>
+
+            <br/><br/>
+            
+            <button type="submit">Enviar</button>
+            <input type="reset" value="Restablecer"/>
+
+        </form>
+
+        <br/><br/><hr/>
+
+        <form>
+            <label for="nombre">
+                Nombre:
+                <input type="text" name="nombre" id="nombre" placeholder="Pon tu nombre"> <br/>
+            </label>
+            <label for="apellido">
+                Nombre:
+                <input type="text" name="apellido" id="apellido" placeholder="Pon tu apellido"><br/><hr/>
+            </label>
+
+            <h3>Login</h3>  
+
+            <input type="email" name="correo" placeholder="Introduzca su correo electronico"/> <br/>
+            <input type="password" name="contraseña" placeholder="Escribe tu contraseña"/> <br/>
+            <button type="submit"> Login </button>
+
+
+
+
+
+
+        </form>
+    
+    </body>
+
+</html>
