@@ -1,0 +1,31 @@
+h1 {
+    color: rgb(80, 80, 216);
+  
+  }
+  
+  p {
+    color: red;
+  }
+
+  button
+  {
+    background-color: black;
+    color:grey;
+    border: 2px solid black;
+  }
+
+table{
+
+  background-color: rgb(96, 228, 96);
+  border: 1px solid black
+}
+
+tr{
+
+  border: 1px solid black;
+}
+
+td{
+
+  border: 1px solid black;
+}
