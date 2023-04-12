@@ -7,8 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
-        <title>Carrito</title>
-        <link rel="stylesheet" href="../CSS/style.css">
+        <title>Forma de Pago</title>
 
     </head>
 
@@ -26,51 +25,39 @@
 
         <main>
 
-            <h2>Mi carrito</h2>
+            <h2>Forma de Pago</h2>
             <a href="productos.html">Seguir comprando</a>
 
             <div>
 
-                <img src="../assets/images/counter.png" alt="Counter Strike" width="280px">
-                <h4>Counter Strike Global Offensive 2</h4><h4>40€</h4>
+                <h3>Mis tarjetas</h3>
                 <form>
-                    <button type="submit">Enviar a carrito</button>
-                    <input type="number" name="numero">
+                    Mastercard....7432
+                    <input type="radio" name="tarjeta" value="tarjeta1" checked><br/>
+                    Mastercard....1242
+                    <input type="radio" name="tarjeta" value="tarjeta2" ><br/>
+                    Mastercard....8369
+                    <input type="radio" name="tarjeta" value="tarjeta3" >
+
+                </form>
+                
+                <a href="finalizarpedido.html" >Pagar con esta tarjeta</a>
+            </div>
+
+            <div>
+
+                <h3>Añadir nueva tarjeta</h3>
+                <form>
+                    <input type="number" name="tarjeta" placeholder="Número de tarjeta"/><br/>
+                    <input type="text" name="Titular de tarjeta" placeholder="Titular de la tarjeta"/><br/>
+                    <input type="date" name="caducidad" placeholder="Caducidad"/>
+                    <input type="password" name="contraseña" placeholder="Código seguro"/><br/>
+                    <button type="submit">Añadir a mis tarjetas</button>
                 </form>
 
+
             </div>
 
-            <div>
-
-                <h3>Resumen de Pedido</h3>
-                <p>Continua con el proceso de compra para conectar tu Coinbase Wallet o pagar con tu tarjeta</p>
-                <h3>40€</h3>
-                <a href="formadepago.html">Proceder al pago</a>
-            </div>
-
-            <div>
-
-                <h3>Otros usuarios también compran</h3>
-    
-                <div>
-    
-                    <img src="../assets/images/batman.png" alt="LEGO Bataman 3" width="200px">
-                    <h4>LEGO Batman 3 Beyond Gotham</h4><h4>50€</h4>
-                    <p>Consigue ahora los mejores productos</p>
-                    <a href="carrito.html">Añadir al carro</a>
-    
-                </div>
-    
-                <div>
-    
-                    <img src="../assets/images/pokemon.png" alt="Pokemon Perla " width="200px">
-                    <h4>Pokemon Perla Reluciente</h4><h4>70€</h4>
-                    <p>Consigue ahora los mejores productos</p>
-                    <a href="carrito.html">Añadir al carro</a>
-    
-                </div>
-    
-            </div>
             
         </main>
 

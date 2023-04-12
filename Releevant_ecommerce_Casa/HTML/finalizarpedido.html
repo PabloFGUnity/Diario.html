@@ -7,8 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
-        <title>Carrito</title>
-        <link rel="stylesheet" href="../CSS/style.css">
+        <title>Finalizar pedido</title>
 
     </head>
 
@@ -26,51 +25,68 @@
 
         <main>
 
-            <h2>Mi carrito</h2>
-            <a href="productos.html">Seguir comprando</a>
+            <h2>Finalizar compra</h2>
+            <a href="formadepago.html">Mastercard....7432 seleccionada</a>
+            <button type="reset">Resetear</button>
 
-            <div>
+            <div>  
 
-                <img src="../assets/images/counter.png" alt="Counter Strike" width="280px">
-                <h4>Counter Strike Global Offensive 2</h4><h4>40€</h4>
+                <h2>Dirección de envío</h2>
                 <form>
-                    <button type="submit">Enviar a carrito</button>
-                    <input type="number" name="numero">
+
+                    <input type="text" name="nombre" placeholder="Nombre"/>
+                    <input type="text" name="apellido" placeholder="Apellidos"/><br/>
+                    <input type="number" name="telefono" placeholder="Teléfono"/>
+                    <input type="email" name="email" placeholder="Email"/><br/>
+                    <input type="text" name="calle" placeholder="Calle"/>
+                    <input type="number" name="numero" placeholder="Número"/><br/>
+                    <input type="text" name="provincia" placeholder="Provincia"/>
+                    <input type="number" name="postal" placeholder="Código Postal"/>
+                    <input type="text" name="pais" placeholder="País"/><br>
+                    <button type="#">Añadir dirección de envío</button>
+
                 </form>
 
             </div>
 
             <div>
 
-                <h3>Resumen de Pedido</h3>
-                <p>Continua con el proceso de compra para conectar tu Coinbase Wallet o pagar con tu tarjeta</p>
-                <h3>40€</h3>
-                <a href="formadepago.html">Proceder al pago</a>
+                <img src="../assets/icons/descarga.png" alt="Envío gratis" width="50px"/>
+
+                <div>
+
+                    <h5>Envio gratis</h5>
+                    <h6>En pedidos de +100€</h6>
+
+                </div>
+    
+
             </div>
 
             <div>
 
-                <h3>Otros usuarios también compran</h3>
-    
+                <img src="../assets/icons/descarga (1).png" alt="Ofertas Únicas" width="50px"/>
+
                 <div>
-    
-                    <img src="../assets/images/batman.png" alt="LEGO Bataman 3" width="200px">
-                    <h4>LEGO Batman 3 Beyond Gotham</h4><h4>50€</h4>
-                    <p>Consigue ahora los mejores productos</p>
-                    <a href="carrito.html">Añadir al carro</a>
-    
+
+                    <h5>4,5€ de descuento en tu siguiente compra</h5>
+                    <h6>Acumula 1% de tus compras en descuentos</h6>
+
                 </div>
-    
-                <div>
-    
-                    <img src="../assets/images/pokemon.png" alt="Pokemon Perla " width="200px">
-                    <h4>Pokemon Perla Reluciente</h4><h4>70€</h4>
-                    <p>Consigue ahora los mejores productos</p>
-                    <a href="carrito.html">Añadir al carro</a>
-    
-                </div>
-    
+
             </div>
+
+            <div>
+
+                <h3></h3>
+                <h4>Counter Strike Global Offensive 2</h4><h4>40€</h4>
+                <h4>LEGO Batman 3 Beyond the Gotham </h4><h4>40€</h4>
+                <h4>Pokemon Perla Reluciente</h4><h4>40€</h4>
+                <h3></h3>
+                <button type="submit">Pagar con tarjeta online</button>
+
+            </div>
+
             
         </main>
 

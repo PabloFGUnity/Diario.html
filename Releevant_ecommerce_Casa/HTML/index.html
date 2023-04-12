@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+    <head>  
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
-        <title>Carrito</title>
-        <link rel="stylesheet" href="../CSS/style.css">
+        <title>MyVideogame</title>
 
     </head>
 
@@ -18,60 +17,54 @@
 
             <img src="../assets/icons/330942.png" alt="logoprincipal" width="50px"/>
             <h4>MyVideogame</h4>
+            <input type="search" name="buscador" />
             <a href="carrito.html">Carrito<span>1</span></a>
-            <a href="formadepago.html">Forma de Pago</a>
-            <a href="finalizarpedido.html">Finalizar Pedido</a>
 
         </header>
 
-        <main>
+        <nav>
 
-            <h2>Mi carrito</h2>
-            <a href="productos.html">Seguir comprando</a>
+            <ul>
+
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="detallesProductos.html">detallesProductos</a></li>
+
+            </ul>
+
+        </nav>
+
+        <main>
 
             <div>
 
-                <img src="../assets/images/counter.png" alt="Counter Strike" width="280px">
-                <h4>Counter Strike Global Offensive 2</h4><h4>40€</h4>
+                <h3>Iniciar sesión</h3>
+                <p>Accede con tus datos anteriores</p>
+
                 <form>
-                    <button type="submit">Enviar a carrito</button>
-                    <input type="number" name="numero">
+
+                    <input type="email" name="email" placeholder="Email"/>
+                    <input type="password" name="contraseña" placeholder="Contraseña"/>
+                    <button type="submit">Iniciar sesión</button>
+                    
                 </form>
 
             </div>
 
             <div>
 
-                <h3>Resumen de Pedido</h3>
-                <p>Continua con el proceso de compra para conectar tu Coinbase Wallet o pagar con tu tarjeta</p>
-                <h3>40€</h3>
-                <a href="formadepago.html">Proceder al pago</a>
-            </div>
+                <h3>Registrate</h3>
+                <p>Introduce tus datos para registrate</p>
 
-            <div>
+                <form>
 
-                <h3>Otros usuarios también compran</h3>
-    
-                <div>
-    
-                    <img src="../assets/images/batman.png" alt="LEGO Bataman 3" width="200px">
-                    <h4>LEGO Batman 3 Beyond Gotham</h4><h4>50€</h4>
-                    <p>Consigue ahora los mejores productos</p>
-                    <a href="carrito.html">Añadir al carro</a>
-    
-                </div>
-    
-                <div>
-    
-                    <img src="../assets/images/pokemon.png" alt="Pokemon Perla " width="200px">
-                    <h4>Pokemon Perla Reluciente</h4><h4>70€</h4>
-                    <p>Consigue ahora los mejores productos</p>
-                    <a href="carrito.html">Añadir al carro</a>
-    
-                </div>
-    
+                    <input type="nombre" name="nombre" placeholder="Nombre"/>
+                    <input type="apellido" name="apellido" placeholder="Apellidos"/>
+                    <input type="email" name="email" placeholder="Email"/>
+                    <input type="password" name="contraseña" placeholder="Contraseña"/>
+                    <button type="submit">Crear cuenta ahora</button>
+
+                </form>
             </div>
-            
         </main>
 
         <section>
@@ -149,7 +142,7 @@
                     <ul>
 
                         <li>Centro de ayuda</li>
-                        <li>Servicio al consumidor</li>
+                        <li>Centro de ayuda</li>
                         <li>Centro de ayuda</li>
                         <li>Centro de ayuda</li>
 
@@ -167,6 +160,8 @@
                         <li>Centro de ayuda</li>
                         <li>Centro de ayuda</li>
                         <li>Centro de ayuda</li>
+
+
 
                     </ul>
 
@@ -201,6 +196,7 @@
 
         </footer>
 
-    </body>
 
+    
+    </body>
 </html>
