@@ -1,12 +1,15 @@
-
-
-p,h4 {
-    color:red; 
+html{
+    color:#222;
 }
 
+h1,h2,h3,h4,h5,h6{
+    color:#444;
+}
 
-.button {
-    color:chocolate;
-    border: 5px solid red;
-    
+a{
+    color:#b8860b;
+}
+
+.m-color{
+    color:#b8860b;
 }
