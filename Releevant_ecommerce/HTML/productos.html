@@ -7,7 +7,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+        <!--Mi estilo-->
         <link rel="stylesheet" href="../CSS/style.css">
+        <!-- Iconos de Bootraps-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <!--Fuente de Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
         <title>MyVideogame</title>
 
     </head>
@@ -19,7 +26,7 @@
             <img src="../assets/icons/330942.png" alt="logoprincipal" width="50px"/>
             <h4>MyVideogame</h4>
             <input type="search" name="buscador" />
-            <a href="carrito.html" class="btn">Carrito<span>1</span></a>
+            <a href="carrito.html" class="btn" id="comprar">Carrito<span>1</span></a>
 
         </header>
 
@@ -37,7 +44,7 @@
 
         <main>
 
-            <h2>Videojuegos</h2>
+            <h1>Videojuegos</h1>
             <h4>Consigue ahora los mejores videojuegos</h4>
             <form>
                 <button type="">Ver todos</button>
@@ -46,7 +53,15 @@
             <div class="card ">
 
                 <img src="../assets/images/counter.png" alt="Counter Strike" width="250px">
-                <h4 class="m-color">Counter Strike Global Offensive 2</h4><h4>40€</h4>
+                <h4 class="m-color">Counter Strike Global Offensive 2</h4><h4>40<i class="bi bi-currency-euro m-color"></i></h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill m-color"></i>
+                    <i class="bi bi-star-fill m-color"></i>
+                    <i class="bi bi-star-fill m-color"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                </div>
                 <p>Consigue ahora los mejores productos</p>
                 <button type="submit">Enviar a carrito</button>
                 <a href="detallesProductos.html">Ver</a>
@@ -56,8 +71,8 @@
             <div class="card">
 
                 <img src="../assets/images/batman.png" alt="LEGO Bataman 3" width="200px">
-                <h4 class="m-color">LEGO Batman 3 Beyond Gotham</h4><h4>50€</h4>
-                <p class="m-color">★★★</p>
+                <h4 class="m-color h1">LEGO Batman 3 Beyond Gotham</h4><h4>50<i class="bi bi-currency-euro"></i></h4>
+                <p class="m-color"><i class="bi bi-star-fill"></i></i></p>
                 <p>Consigue ahora los mejores productos</p>
                 <button type="submit">Enviar a carrito</button>
                 <a href="detallesProductos.html">Ver</a>
