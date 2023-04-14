@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" >
 
     <head>
 
@@ -17,6 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
         <title>MyVideogame</title>
 
+        <!-- TODO EN MULTIPLO DE 8-->
     </head>
 
     <body>
@@ -26,23 +27,34 @@
             <img src="../assets/icons/330942.png" alt="logoprincipal" width="50px"/>
             <h4>MyVideogame</h4>
             <input type="search" name="buscador" />
-            <a href="carrito.html" class="btn" id="comprar">Carrito<span>1</span></a>
+            <a href="carrito.html" class="button" id="comprar">Carrito<span>1</span></a>
 
         </header>
 
-        <nav>
+        <nav class="container" id="navegacion" >
 
-            <ul>
+            <div class="col_izq">
+                <ul>
 
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="detallesProductos.html">detallesProductos</a></li>
                 <li><a href="index.html">Logout</a></li>
 
+                </ul>
+            </div>  
+
+            <div class="col_der">
+            <ul>
+
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html">Logout</a></li>
+
             </ul>
+            </div>
 
         </nav>
 
-        <main>
+        <main >
 
             <h1>Videojuegos</h1>
             <h4>Consigue ahora los mejores videojuegos</h4>
@@ -50,11 +62,12 @@
                 <button type="">Ver todos</button>
             </form>
 
-            <div class="card ">
+            <div class="card">
 
                 <img src="../assets/images/counter.png" alt="Counter Strike" width="250px">
-                <h4 class="m-color">Counter Strike Global Offensive 2</h4><h4>40<i class="bi bi-currency-euro m-color"></i></h4>
-                <div class="rating">
+                <div class="primera_tarjeta">
+                <h4 class="m-color" class="primera_tarjeta">Counter Strike Global Offensive 2</h4><h4 class="primera_tarjeta">40<i class="bi bi-currency-euro m-color primera_tarjeta"></i></h4>
+                <div class="rating primera_tarjeta">
                     <i class="bi bi-star-fill m-color"></i>
                     <i class="bi bi-star-fill m-color"></i>
                     <i class="bi bi-star-fill m-color"></i>
@@ -62,16 +75,17 @@
                     <i class="bi bi-star-fill"></i>
 
                 </div>
-                <p>Consigue ahora los mejores productos</p>
-                <button type="submit">Enviar a carrito</button>
-                <a href="detallesProductos.html">Ver</a>
+                <p class="primera_tarjeta">Consigue ahora los mejores productos</p>
+                <button type="submit primera_tarjeta button">Enviar a carrito</button>
+                <a href="detallesProductos.html" class="button">Ver</a>
+                </div>
 
             </div>
 
             <div class="card">
 
                 <img src="../assets/images/batman.png" alt="LEGO Bataman 3" width="200px">
-                <h4 class="m-color h1">LEGO Batman 3 Beyond Gotham</h4><h4>50<i class="bi bi-currency-euro"></i></h4>
+                <h4 class="m-color ">LEGO Batman 3 Beyond Gotham</h4><h4>50<i class="bi bi-currency-euro"></i></h4>
                 <p class="m-color"><i class="bi bi-star-fill"></i></i></p>
                 <p>Consigue ahora los mejores productos</p>
                 <button type="submit">Enviar a carrito</button>
