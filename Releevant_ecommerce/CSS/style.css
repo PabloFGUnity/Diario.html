@@ -1,9 +1,32 @@
+/*Primer porcentaje es quitar saturacion (que se vea mas vivo o no)*/
+/*Segundo porcentaje es hacer que se acerque mas a negro o blanco*/
+/*ctrl+H*/
+:root{
+    --hue:43;
+    --principal: hsl (var(--hue) 89% 38% / 1);
+    --secundario: hsl(var(--hue) 89% 30% / 1);
+    --resalto: hsl(223 89% 60% / 1);
+    --negro: hsl(var(--hue) 89% 38% / 1);
+    --blanco: hsl(var(--hue) 89% 38% / 1);
+    --gris: hsl(var(--hue) 50% 50% / 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
 body{
     color:#222;
     font-family: 'Outfit', sans-serif;
-    margin: 0;
+    margin: 5%;
     font-size: 16px;
 }
+
+img{
+    max-width: 100%;
+}
+
 
 /*Tipografía*/
 p {margin-bottom: 1rem;}
@@ -32,10 +55,24 @@ small, .text_small {font-size: 0.8rem;}
 
 /*Componentes*/
 
+/* Menu */
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+}
+
 /*Botones*/
 .button{
     padding: 16px;
-    decoration: none;
+    border: 2px solid var(--gris);
+    text-decoration: none;
+    cursor:pointer;
+    
 }
 
 i{
@@ -44,7 +81,8 @@ i{
 
 /*Cards */
 a,.m-color{
-    color:#b8860b;
+    color:var(--principal);
+    text-decoration: none;
 }
 
 .card{
@@ -66,7 +104,9 @@ a,.m-color{
 #comprar{
     position: relative;
     padding: 16px;
-    border: 2px solid #b8860b;
+    border: 6px solid var(--principal);
+    background-color: var(--resalto);
+    
 
 }
 #comprar span{
@@ -75,20 +115,33 @@ a,.m-color{
     right:0px;
 }
 
+
+
 .rating{
     color:grey;
 }
 
-/*Main*/
-.col_der{
-    width: 80%;
-    inline;
+/* Nav */
+#navegacion{
+    display:flex;
+    text-decoration: none;
 }
+#navegacion .col_izq,
+#navegacion .con_der{
+    width:40%;
+    
+}
+
+#navegacion .col_der .menu{
+    text-align: right;
+
+}
+
 
 /*Helper*/
 .container{
     max-width: 992px;
-    margin: 0 auto;
+    margin: 0 auto; /*Primero vertical y segundo horizontal*/
 }
 
 .m-color{
